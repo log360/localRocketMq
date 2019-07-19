@@ -1,0 +1,13 @@
+3.1 启动NAMESERVER
+Cmd命令框执行进入至‘MQ文件夹\bin’下，然后执行‘start mqnamesrv.cmd’，启动NAMESERVER。成功后会弹出提示框，此框勿关闭。
+3.2 启动BROKER
+
+        Cmd命令框执行进入至‘MQ文件夹\bin’下，然后执行‘start mqbroker.cmd -n 127.0.0.1:9876 autoCreateTopicEnable=true’，启动BROKER。成功后会弹出提示框，此框勿关闭。
+
+
+注意：使用java的RocketMQ客户端发送消息需要保证客户端的版本和RcoketMQ的版本一致！！！
+
+如果mqBroker启动失败，删除当前用户下面的store文件夹下面所有文件！
+
+
+网页通过 \RocketMQ\bin\rocketmq-externals\rocketmq-console\target  cmd 窗口下运行 java -jar rocketmq-console-ng-1.0.0.jar
